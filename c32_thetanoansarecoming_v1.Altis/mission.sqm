@@ -1,0 +1,1451 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_characters_f_beta",
+		"A3_Characters_F_Civil",
+		"A3_Boat_F_Boat_Transport_01",
+		"a3_map_altis",
+		"A3_Soft_F_EPC_Truck_03",
+		"a3_uav_f_characters_f_gamma",
+		"A3_Characters_F_Bootcamp",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Air_F_Heli_Heli_Light_02",
+		"a3_air_f_heli_light_02",
+		"A3_Air_F_EPB_Heli_Light_03",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_Gamma",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_EPC",
+		"A3_Data_F_Curator_Virtual",
+		"A3_Air_F_Heli_Heli_Transport_03",
+		"A3_Air_F_Heli_Heli_Transport_04",
+		"A3_Air_F_Beta_Heli_Transport_01",
+		"A3_Armor_F_Panther",
+		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Armor_F_Marid",
+		"A3_Air_F_Beta_Heli_Attack_02",
+		"A3_Armor_F_EPC_MBT_01",
+		"A3_Armor_F_T100K",
+		"A3_Soft_F_MRAP_01",
+		"A3_Soft_F_HEMTT",
+		"A3_Soft_F_MRAP_02",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
+		"A3_Soft_F_Truck",
+		"A3_Air_F_Heli_Heli_Light_01",
+		"A3_Armor_F_AMV",
+		"A3_armor_f_beta_APC_Tracked_02",
+		"A3_Armor_F_Slammer",
+		"A3_Structures_F_Mil_BagBunker"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Modules_F_Curator_Curator",
+		"A3_Characters_F_Gamma",
+		"a3_characters_f",
+		"A3_Characters_F_BLUFOR",
+		"A3_Data_F_Curator_Virtual",
+		"A3_Air_F_EPB_Heli_Light_03",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Armor_F_Slammer",
+		"A3_Structures_F_Mil_BagBunker",
+		"a3_map_altis"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="c32_thetanoansarecoming_v1";
+		overviewText="New FA mission idea";
+		resistanceWest=0;
+		startWeather=0.84999996;
+		startWind=0;
+		forecastWeather=0.84999996;
+		forecastWind=0;
+		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=8;
+		minute=15;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Groups
+	{
+		items=17;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11919.995,12.631745,13891.921};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="F3_Zeus";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="2";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=0;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="this addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISKill} forEach crew(_this select 1)}];this addCuratorEditableObjects [playableUnits,true];";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21132.047,20.719999,7344.1074};
+					azimut=-85.963867;
+					id=1;
+					side="WEST";
+					vehicle="B_G_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="UnitFIA_CO";
+					init="GrpFIA_CO = group this; [""co"",this,""ctrg""] call f_fnc_assignGear;";
+					description="CTRG Commander";
+				};
+				class Item1
+				{
+					position[]={21133.969,20.719999,7346.1123};
+					azimut=-85.963867;
+					id=2;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_CO_M";
+					init="GrpFIA_CO = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Medic";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21096.402,20.716021,7335.791};
+					azimut=93.218941;
+					id=3;
+					side="WEST";
+					vehicle="B_G_officer_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_DC";
+					init="GrpFIA_DC = group this; [""dc"",this] call f_fnc_assignGear;";
+					description="FIA Deputy Commander and Forward Air Controller";
+				};
+				class Item1
+				{
+					position[]={21094.52,20.716019,7333.5132};
+					azimut=93.218941;
+					id=4;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_DC_M";
+					init="GrpFIA_DC = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Medic";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21150.326,20.047901,7434.8384};
+					azimut=280;
+					id=5;
+					side="WEST";
+					vehicle="B_G_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_ASL_SL";
+					init="GrpFIA_ASL = group this; [""dc"",this,""ctrg""] call f_fnc_assignGear;";
+					description="CTRG Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={21162.129,19.378683,7497.4307};
+					azimut=280;
+					id=6;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_ASL_M";
+					init="GrpFIA_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Alpha Medic";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21152.279,19.802217,7448.9058};
+					azimut=-170.1978;
+					id=7;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A1_FTL";
+					init="GrpFIA_A1 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21149.449,19.804127,7452.0171};
+					azimut=-170.1978;
+					id=8;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AR1";
+					init="GrpFIA_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21146.207,19.814707,7452.6147};
+					azimut=-170.1978;
+					id=9;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AR2";
+					init="GrpFIA_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21142.791,19.830553,7453.1235};
+					azimut=-170.1978;
+					id=10;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AT";
+					init="GrpFIA_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Demo Export (Demo)";
+				};
+				class Item4
+				{
+					position[]={21139.457,19.865149,7453.7017};
+					azimut=-170.1978;
+					id=11;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_R1";
+					init="GrpFIA_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21136.141,19.901096,7454.2788};
+					azimut=-170.1978;
+					id=12;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_R2";
+					init="GrpFIA_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Rifleman";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21093.363,20.748755,7321.3838};
+					azimut=99.06794;
+					id=13;
+					side="WEST";
+					vehicle="B_G_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_BSL_SL";
+					init="GrpFIA_BSL = group this; [""dc"",this,""ctrg""] call f_fnc_assignGear;";
+					description="CTRG Bravo Squad Leader";
+				};
+				class Item1
+				{
+					position[]={21091.393,20.75028,7318.9746};
+					azimut=99.06794;
+					id=14;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_BSL_M";
+					init="GrpFIA_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Bravo Medic";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21078.021,20.878059,7323.6504};
+					azimut=99.06794;
+					id=15;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_B1_FTL";
+					init="GrpFIA_B1 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21075.332,20.907742,7320.4966};
+					azimut=99.06794;
+					id=16;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B1_AR1";
+					init="GrpFIA_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21074.764,20.742399,7317.2554};
+					azimut=99.06794;
+					id=17;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B1_AR2";
+					init="GrpFIA_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21074.316,20.535509,7313.8203};
+					azimut=99.06794;
+					id=18;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B1_AT";
+					init="GrpFIA_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Demo Export (Demo)";
+				};
+				class Item4
+				{
+					position[]={21073.781,20.269327,7310.4624};
+					azimut=99.06794;
+					id=19;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B1_R1";
+					init="GrpFIA_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21073.256,19.960707,7307.1694};
+					azimut=99.06794;
+					id=20;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B1_R2";
+					init="GrpFIA_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 1 Rifleman";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21062.557,21.248735,7326.7109};
+					azimut=99.06794;
+					id=21;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_B2_FTL";
+					init="GrpFIA_B2 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21059.619,21.091379,7323.3643};
+					azimut=99.06794;
+					id=22;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B2_AR1";
+					init="GrpFIA_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21059.049,20.991766,7320.1113};
+					azimut=99.06794;
+					id=23;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B2_AR2";
+					init="GrpFIA_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21058.594,20.826775,7316.6943};
+					azimut=99.06794;
+					id=24;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B2_AT";
+					init="GrpFIA_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Demo Expert (Demo)";
+				};
+				class Item4
+				{
+					position[]={21058.061,20.701612,7313.3408};
+					azimut=99.06794;
+					id=25;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B2_R1";
+					init="GrpFIA_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21057.543,20.552658,7310.0327};
+					azimut=99.06794;
+					id=26;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_B2_R2";
+					init="GrpFIA_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Bravo 2 Rifleman";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21087.453,21.155312,7292.9233};
+					azimut=-258.92151;
+					id=27;
+					side="WEST";
+					vehicle="B_G_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_CSL_SL";
+					init="GrpFIA_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					description="FIA Charlie Squad Leader";
+				};
+				class Item1
+				{
+					position[]={21085.238,21.151707,7290.0952};
+					azimut=-258.92151;
+					id=28;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_CSL_M";
+					init="GrpFIA_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Charlie Medic";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21072.215,19.985916,7296.0977};
+					azimut=-258.92151;
+					id=29;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_C1_FTL";
+					init="GrpFIA_C1 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21069.66,20.061031,7293.3857};
+					azimut=-258.92151;
+					id=30;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C1_AR1";
+					init="GrpFIA_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21068.977,20.12306,7290.1602};
+					azimut=-258.92151;
+					id=31;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C1_AR2";
+					init="GrpFIA_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21068.404,20.199615,7286.7603};
+					azimut=-258.92151;
+					id=32;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C1_AT";
+					init="GrpFIA_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Demo Expert (Demo)";
+				};
+				class Item4
+				{
+					position[]={21067.766,20.262915,7283.4253};
+					azimut=-258.92151;
+					id=33;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C1_R1";
+					init="GrpFIA_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21067.107,20.346468,7280.144};
+					azimut=-258.92151;
+					id=34;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C1_R2";
+					init="GrpFIA_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 1 Rifleman";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21056.809,20.575256,7298.835};
+					azimut=-258.92151;
+					id=35;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_C2_FTL";
+					init="GrpFIA_C2 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21054.293,20.926769,7296.3398};
+					azimut=-258.92151;
+					id=36;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C2_AR1";
+					init="GrpFIA_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21053.609,20.998188,7293.1162};
+					azimut=-258.92151;
+					id=37;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C2_AR2";
+					init="GrpFIA_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21053.049,21.053638,7289.7231};
+					azimut=-258.92151;
+					id=38;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C2_AT";
+					init="GrpFIA_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Demo Expert (Demo)";
+				};
+				class Item4
+				{
+					position[]={21052.404,21.128017,7286.3853};
+					azimut=-258.92151;
+					id=39;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C2_R1";
+					init="GrpFIA_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21051.766,21.191954,7283.0957};
+					azimut=-258.92151;
+					id=40;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_C2_R2";
+					init="GrpFIA_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Charlie 2 Rifleman";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21136.748,20.717669,7338.1665};
+					azimut=-85.963867;
+					id=41;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_MMG1_AG";
+					init="GrpFIA_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;";
+					description="FIA Medium MG Team 1 Spotter (Leader)";
+				};
+				class Item1
+				{
+					position[]={21138.402,20.71546,7341.0254};
+					azimut=-85.963867;
+					id=42;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_MMG1_G";
+					init="GrpFIA_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear;";
+					description="FIA Medium MG Team 1 Gunner";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21137.199,20.717064,7343.8364};
+					azimut=-85.963867;
+					id=43;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_MMG2_AG";
+					init="GrpFIA_MMG2 = group this; [""mmgag"",this] call f_fnc_assignGear;";
+					description="FIA Medium MG Team 2 Spotter (Leader)";
+				};
+				class Item1
+				{
+					position[]={21138.813,20.714914,7346.835};
+					azimut=-85.963867;
+					id=44;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_MMG2_G";
+					init="GrpFIA_MMG2 = group this; [""mmgg"",this] call f_fnc_assignGear;";
+					description="FIA Medium MG Team 2 Gunner";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={21137.537,20.716616,7349.4434};
+					azimut=-85.963867;
+					id=45;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_MAT1_AG";
+					init="GrpFIA_MAT1 = group this; [""matag"",this] call f_fnc_assignGear;      ";
+					description="FIA Medium AT Team 1 Spotter (Leader)";
+				};
+				class Item1
+				{
+					position[]={21139.701,20.716213,7351.8628};
+					azimut=-85.963867;
+					id=46;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_MAT1_G";
+					init="GrpFIA_MAT1 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					description="FIA Medium AT Team 1 Gunner";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21119.838,21.692795,7266.5322};
+					id=47;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11902.687,12.45,13891.741};
+					id=48;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="F3_Zeus";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={21164.154,19.203468,7512.3892};
+					azimut=190.58736;
+					id=49;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A2_FTL";
+					init="GrpFIA_A2 = group this; [""FTL"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Fire Team Leader";
+				};
+				class Item1
+				{
+					position[]={21161.41,19.183296,7515.2842};
+					azimut=190.58736;
+					id=50;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AR1";
+					init="GrpFIA_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={21158.158,19.216167,7515.9399};
+					azimut=190.58736;
+					id=51;
+					side="WEST";
+					vehicle="B_G_Soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AR2";
+					init="GrpFIA_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={21154.766,19.267767,7516.4712};
+					azimut=190.58736;
+					id=52;
+					side="WEST";
+					vehicle="B_G_Soldier_exp_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AT";
+					init="GrpFIA_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Demo Expert (Demo)";
+				};
+				class Item4
+				{
+					position[]={21151.42,19.337505,7517.1064};
+					azimut=190.58736;
+					id=53;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_R1";
+					init="GrpFIA_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Rifleman";
+				};
+				class Item5
+				{
+					position[]={21148.123,19.396727,7517.7148};
+					azimut=190.58736;
+					id=54;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_R2";
+					init="GrpFIA_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Rifleman";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=30;
+		class Item0
+		{
+			position[]={21125.117,20.723175,7348.499};
+			azimut=190;
+			special="NONE";
+			id=55;
+			side="EMPTY";
+			vehicle="I_Heli_light_03_F";
+			skill=0.60000002;
+			text="TH1";
+		};
+		class Item1
+		{
+			position[]={21141.721,20.00992,7439.623};
+			azimut=190;
+			id=56;
+			side="EMPTY";
+			vehicle="I_Heli_light_03_F";
+			skill=0.60000002;
+			text="TH2";
+		};
+		class Item2
+		{
+			position[]={21152.52,19.484804,7502.0327};
+			azimut=190;
+			id=57;
+			side="EMPTY";
+			vehicle="I_Heli_light_03_F";
+			skill=0.60000002;
+			text="TH3";
+		};
+		class Item3
+		{
+			position[]={21111.568,21.417622,7281.3521};
+			azimut=190;
+			special="NONE";
+			id=58;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_armed_F";
+			skill=0.60000002;
+			text="AH1";
+		};
+		class Item4
+		{
+			position[]={14459.96,9.185791,5906.5063};
+			azimut=315;
+			special="NONE";
+			id=59;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01";
+			description="Fleet Artillery";
+		};
+		class Item5
+		{
+			position[]={14475.664,7.7437396,5906.0522};
+			azimut=315;
+			special="NONE";
+			id=60;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_1";
+			description="Fleet Artillery";
+		};
+		class Item6
+		{
+			position[]={14493.189,6.4791918,5904.0029};
+			azimut=315;
+			special="NONE";
+			id=61;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_2";
+			description="Fleet Artillery";
+		};
+		class Item7
+		{
+			position[]={14485.45,6.4647975,5919.2524};
+			azimut=315;
+			special="NONE";
+			id=62;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_3";
+			description="Fleet Artillery";
+		};
+		class Item8
+		{
+			position[]={14512.536,6.279038,5927.6714};
+			azimut=315;
+			special="NONE";
+			id=63;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_4";
+			description="Fleet Artillery";
+		};
+		class Item9
+		{
+			position[]={14498.196,6.2646885,5921.2974};
+			azimut=315;
+			special="NONE";
+			id=64;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_5";
+			description="Fleet Artillery";
+		};
+		class Item10
+		{
+			position[]={14510.031,6.9481835,5905.8213};
+			azimut=315;
+			special="NONE";
+			id=65;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_6";
+			description="Fleet Artillery";
+		};
+		class Item11
+		{
+			position[]={14495.239,8.0883303,5892.6235};
+			azimut=315;
+			special="NONE";
+			id=66;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_7";
+			description="Fleet Artillery";
+		};
+		class Item12
+		{
+			position[]={14513.674,6.7252855,5890.3477};
+			azimut=315;
+			special="NONE";
+			id=67;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_8";
+			description="Fleet Artillery";
+		};
+		class Item13
+		{
+			position[]={14509.577,6.984592,5876.6914};
+			azimut=315;
+			special="NONE";
+			id=68;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_01_9";
+			description="Fleet Artillery";
+		};
+		class Item14
+		{
+			position[]={7848.6631,3.5472715,7645.3496};
+			azimut=90;
+			special="NONE";
+			id=69;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02";
+			description="Fleet Artillery";
+		};
+		class Item15
+		{
+			position[]={7862.0068,2.3041885,7647.4023};
+			azimut=90;
+			special="NONE";
+			id=70;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_1";
+			description="Fleet Artillery";
+		};
+		class Item16
+		{
+			position[]={7875.6079,0.85694098,7648.6841};
+			azimut=90;
+			special="NONE";
+			id=71;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_2";
+			description="Fleet Artillery";
+		};
+		class Item17
+		{
+			position[]={7889.7227,1.4124842,7655.6128};
+			azimut=90;
+			special="NONE";
+			id=72;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_3";
+			description="Fleet Artillery";
+		};
+		class Item18
+		{
+			position[]={7904.0928,2.0422802,7660.2324};
+			azimut=90;
+			special="NONE";
+			id=73;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_4";
+			description="Fleet Artillery";
+		};
+		class Item19
+		{
+			position[]={7842.7607,5.4770894,7615.5806};
+			azimut=90;
+			special="NONE";
+			id=74;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_5";
+			description="Fleet Artillery";
+		};
+		class Item20
+		{
+			position[]={7856.3618,4.9585023,7623.0239};
+			azimut=90;
+			special="NONE";
+			id=75;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_6";
+			description="Fleet Artillery";
+		};
+		class Item21
+		{
+			position[]={7870.4766,5.5937486,7625.5908};
+			azimut=90;
+			special="NONE";
+			id=76;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_7";
+			description="Fleet Artillery";
+		};
+		class Item22
+		{
+			position[]={7884.0767,3.5980759,7634.3159};
+			azimut=90;
+			special="NONE";
+			id=77;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_8";
+			description="Fleet Artillery";
+		};
+		class Item23
+		{
+			position[]={7902.5527,0.76161122,7638.9336};
+			azimut=90;
+			special="NONE";
+			id=78;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_9";
+			description="Fleet Artillery";
+		};
+		class Item24
+		{
+			position[]={7865.0869,4.7810316,7640.2153};
+			azimut=90;
+			special="NONE";
+			id=79;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_10";
+			description="Fleet Artillery";
+		};
+		class Item25
+		{
+			position[]={7887.4131,1.4242175,7646.375};
+			azimut=90;
+			special="NONE";
+			id=80;
+			side="EMPTY";
+			vehicle="B_MBT_01_arty_F";
+			skill=0.60000002;
+			fuel=0;
+			text="fleetArtillery_02_11";
+			description="Fleet Artillery";
+		};
+		class Item26
+		{
+			position[]={9285.6787,42.128143,8058.8486};
+			azimut=90;
+			special="NONE";
+			id=81;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			skill=0.60000002;
+			description="Fleet Artillery";
+		};
+		class Item27
+		{
+			position[]={9314.8037,43.455833,8078.4648};
+			azimut=90;
+			special="NONE";
+			id=82;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			skill=0.60000002;
+			description="Fleet Artillery";
+		};
+		class Item28
+		{
+			position[]={11213.968,178.88162,8645.7715};
+			azimut=90;
+			special="NONE";
+			id=83;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			skill=0.60000002;
+			description="Fleet Artillery";
+		};
+		class Item29
+		{
+			position[]={11240.153,176.94304,8656.5273};
+			azimut=90;
+			special="NONE";
+			id=84;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Large_F";
+			skill=0.60000002;
+			description="Fleet Artillery";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

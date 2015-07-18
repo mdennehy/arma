@@ -15,9 +15,9 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Operation Urban Garden ***";
+onLoadName = "Operation Urban Garden
 onLoadMission = "Made with the F3 Mission Development Framework";
-author = "*** Eagle_eye and Sparks ***";
+author = "Eagle_eye and Sparks";
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
 
@@ -48,7 +48,7 @@ class cfgNotifications
 	// Notification Template
 	class Template
 	{
-		title = ""; // Tile displayed as text on black background. Filled by arguments.
+		title = "Operation Urban Garden"; // Tile displayed as text on black background. Filled by arguments.
 		iconPicture = ""; // Small icon displayed in left part. Colored by "color", filled by arguments.
 		iconText = ""; // Short text displayed over the icon. Colored by "color", filled by arguments.
 		description = ""; // Brief description displayed as structured text. Colored by "color", filled by arguments.
@@ -292,9 +292,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "MISSION SUCCESS";
-		subtitle = "";
-		description = "The platoon managed to fulfill all objectives according to plan.";
+		title = "MISSION COMPLETE SUCCESS";
+		subtitle = "C2 assets destroyed, Fleet safe, Strike Team escaped";
+		description = "All C2 assets were destroyed in time, the Fleet is safely bombarding the island and the Strike Team escaped";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -302,9 +302,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "MISSION FAILURE";
-		subtitle = "";
-		description = "The platoon failed at fulfilling it's obejctives.";
+		title = "MISSION PARTIAL SUCCESS";
+		subtitle = "C2 assets destroyed, Fleet safe, Strike Team lost";
+		description = "All C2 assets were destroyed in time, the Fleet is safely bombarding the island but the Strike Team was lost";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -313,8 +313,8 @@ class CfgDebriefing
 	class End3
 	{
 		title = "MISSION INCONCLUSIVE";
-		subtitle = "";
-		description = "The platoon either did not fulfill it's objectives to satisfication or had the mission ended in a stalemate.";
+		subtitle = "Some C2 assets destroyed, Fleet under threat";
+		description = "Only some C2 assets were destroyed in time, but the threat against the Fleet was sufficiently degraded to allow bombardment";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -322,9 +322,9 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
-		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		title = "MISSION FAILURE";
+		subtitle = "Insufficient C2 assets destroyed";
+		description = "Not enough C2 assets were destroyed in time, Fleet bombardment aborted, the Invasion is off!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -332,9 +332,9 @@ class CfgDebriefing
 
 	class End5
 	{
-		title = "Ending #5";
-		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		title = "MISSION FAILURE";
+		subtitle = "C2 assets were not destroyed";
+		description = "C2 assets were not destroyed in time, Fleet bombardment aborted, the Invasion is off!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -342,9 +342,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "Ending #6";
-		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		title = "MISSION TOTAL FAILURE";
+		subtitle = "C2 assets were not destroyed, Strike Team lost";
+		description = "C2 assets were not destroyed in time, Fleet bombardment aborted, the Invasion is off, and the Strike Team have all been lost.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

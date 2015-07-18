@@ -11,7 +11,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Eagle_eye and Sparks
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -23,7 +23,8 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Tovarich, please remember that FTLs and command elements designate HALO drop points and
+that you can only jump out of an aircraft once. 
 "]];
 
 // ====================================================================================
@@ -35,19 +36,32 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Tovarich Commander, the enemy has three critical C2 assets which must be
+destroyed before the fleet enters radar range for the invasion to succeed. You
+have fifteen (15) minutes to achieve this objective. At their current speed, the
+fleet will be within firing range five (5) minutes later and will
+<b>immediately</b> commence the bombardment so it it strongly suggested you
+extract before that point.  
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+CO, Alpha and Bravo squads will insert by Wy-55 helicopter from the commandered
+FAB in Feres.
+FAC and Charlie squad will HALO drop in and may be used as scouting elements.
+All elements will extract by helicopter to Feres. Ferrying may be required.
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+An AH-9 will be available at the FAB for CAS. However due to the covert nature
+of the preparation for this mission, it was not possible to arrange for
+additional ordanance for the AH-9 so once it has expended its ordanance, it will
+cease to have use as a CAS platform.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+FAC will be responsible for coordinating air operations to reduce CO's workload
+while conducting the ground operations. FAC will also be responsible for
+coordination of the final evacuation. 
 "]];
 
 // ====================================================================================

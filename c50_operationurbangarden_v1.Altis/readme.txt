@@ -1,10 +1,10 @@
 MISSION README
 ==============
 
-Mission: [ Insert name of mission ]
-Version: [ Insert version here, format: N-N-N ]
-Developer(s): [ Insert your name(s) here. ]
-Description: [ Insert short mission description here ]
+Mission: Operation Urban Garden
+Version: 0-0-1
+Developer(s): Eagle_Eye and Sparks
+Description: Strike against three Altis targets in preparation for an invasion from Tanoa
 
 
 
@@ -25,16 +25,15 @@ README CONTENTS
 01. VERSION HISTORY
 ===================
 
-Version | Date | Notes
+0-0-1 | 18 07 2015 | AirCav/Paratroop strike against three targets followed by helo extract with time limits
 
-[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ] | [ Insert short note here. ]
 
 
 
 02. COPYRIGHT STATEMENT
 =======================
 
-This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
+This mission is (c)2015 Eagle_Eye & Sparks. All rights reserved.
 
 
 
@@ -43,7 +42,7 @@ This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
 
 This mission (hereafter 'Software') contains files to be used in the PC simulator ArmA 3. To use the Software you must agree to the following conditions of use:
 
-1. [ Insert your name(s) here. ] (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
+1. Eagle_eye and Sparks (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
 
 2. The commercial exploitation of the Software without written permission from The Author(s) is expressly prohibited.
 

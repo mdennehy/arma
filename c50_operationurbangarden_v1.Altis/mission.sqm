@@ -58,8 +58,8 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="c32_thetanoansarecoming_v1";
-		overviewText="New FA mission idea";
+		briefingName="c50_operationurbangarden_v1";
+		overviewText="AirCav/Paratroop strike followed by helo extract w/time limits";
 		resistanceWest=0;
 		startWeather=0.84999996;
 		startWind=0;

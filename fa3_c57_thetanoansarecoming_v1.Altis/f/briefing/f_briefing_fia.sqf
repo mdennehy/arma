@@ -106,11 +106,13 @@ carry resupplies for them.
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-The Tanoan Armed Forces is preparing 
+The Tanoan Armed Forces is preparing an AirCav/Paratroop strike on three radar
+antennae to support an invasion of Altis.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
+Light enemy presence is expected at the targets, but a very large mechanised
+QRF is stationed at
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>

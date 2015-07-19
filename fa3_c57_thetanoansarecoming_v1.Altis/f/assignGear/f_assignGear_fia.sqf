@@ -65,7 +65,7 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "optic_ACO";			// ACO
+_scope1 = "optic_Holosight";			// ACOs suck
 _scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
@@ -245,14 +245,14 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["U_BG_leader","U_BG_Guerilla1_1","U_BG_Guerilla2_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_Guerilla3_2","U_BG_Guerrilla_6_1"];
-_baseHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_Bandanna_khk","H_Booniehat_khk","H_Cap_oli","H_Watchcap_blk"];
-_baseGlasses = ["G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli"];
+_baseUniform = ["U_C_Driver_3"];
+_baseHelmet = ["H_MilCap_gry"];
+_baseGlasses = ["G_Tactical_Clear"];
 
 // Vests
 _lightRig = ["V_BandollierB_blk","V_BandollierB_rgr"];
 _mediumRig = ["V_TacVest_blk","V_TacVest_camo","V_TacVest_oli"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier1_blk","V_PlateCarrierIAGL_oli"];
+_heavyRig = ["V_PlateCarrierGL_blk"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -396,6 +396,23 @@ switch (_typeofUnit) do
 		["g"] call _backpack;
 	};
 
+// LOADOUT: FORWARD AIR CONTROLLER
+	case "fac":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+    _unit addmagazines ["6Rnd_GreenSignal_F",2];
+    _unit addmagazines ["6Rnd_RedSignal_F",2];
+		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenadegreen,1];
+		_unit addweapon ("srifle_DMR_04_F");
+    _unit addWeapon "hgun_Pistol_Signal_F";
+		_unit addWeapon "Laserdesignator";
+		_unit linkItem "ItemGPS";
+	};
+
 // LOADOUT: JTAC
 	case "jtac":
 	{
@@ -445,7 +462,6 @@ switch (_typeofUnit) do
 		["g"] call _backpack;
 	};
 
-
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
@@ -484,6 +500,79 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,1];
 		["rat"] call _backpack;
 		_unit addweapon _RAT;
+	};
+
+// LOADOUT: SCOUT MEDIC
+	case "sm":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+		_unit addmagazines ["10Rnd_127x54_Mag",5];
+		_unit addweapon ("srifle_DMR_04_F");
+		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_grenade,1];
+		{_unit addItem _firstaid} forEach [1,2,3,4];
+		_unit linkItem "ItemGPS";
+	};
+
+// LOADOUT: SCOUT FIRETEAM LEADER
+	case "sftl":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+    _unit addmagazines ["6Rnd_GreenSignal_F",2];
+    _unit addmagazines ["6Rnd_RedSignal_F",2];
+		_unit addmagazines [_grenade,1];
+		_unit addweapon ("srifle_DMR_04_F");
+    _unit addWeapon "hgun_Pistol_Signal_F";
+		_unit addWeapon "Laserdesignator";
+		_unit linkItem "ItemGPS";
+	};
+
+// LOADOUT: SCOUT AUTOMATIC RIFLEMAN
+	case "sar":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+		_unit addmagazines [_ARmag,2];
+		_unit addweapon _AR;
+		_attachments pushback (_bipod1);
+    _attachments pushback ("muzzle_snds_H");
+	};
+
+// LOADOUT: SCOUT ASSISTANT AUTOMATIC RIFLEMAN
+	case "saar":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+		_unit addmagazines [_riflemag,5];
+		_unit addmagazines [_riflemag_tr,4];
+		_unit addweapon (_rifle call BIS_fnc_selectRandom);
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,1];
+	};
+
+// LOADOUT: SCOUT RIFLEMAN (AT)
+	case "srat":
+	{
+    _unit addmagazines [_chemred,3]
+    _unit addmagazines [_chemblue,3]
+    _unit addmagazines [_chemgreen,3]
+    _unit addmagazines [_chemyellow,3]
+    _unit addmagazines ["5Rnd_127x108_APDS_Mag",3]
+    _unit addmagazines ["11Rnd_45ACP_Mag",3]
+    _unit addWeapon "srifle_GM6_F";
+    _unit addWeapon "hgun_Pistol_heavy_01_F";
+    _unit addHandgunItem "muzzle_snds_acp";
+    _unit addHandgunItem "optic_MRD";
 	};
 
 // LOADOUT: DESIGNATED MARKSMAN

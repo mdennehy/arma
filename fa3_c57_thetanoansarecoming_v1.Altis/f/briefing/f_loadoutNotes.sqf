@@ -49,6 +49,9 @@ _fnc_wepMags = {
 // SET UP KEY VARIABLES
 
 _text = "<br />NOTE: The loadout shown below is only accurate at mission start.<br />
+<br />
+Also, we just want to point out, the ACO(Green) sucks and should be shot into
+the sun.<br />
 <br />";
 _stuff = [];
 

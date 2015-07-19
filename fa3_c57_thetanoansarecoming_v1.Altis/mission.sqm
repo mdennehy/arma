@@ -340,7 +340,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=3;
+				items=2;
 				class Item0
 				{
 					position[]={21091.189,23.484856,7187.0122};

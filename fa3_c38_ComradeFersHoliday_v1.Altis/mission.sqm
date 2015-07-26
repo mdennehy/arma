@@ -53,7 +53,9 @@ class Mission
 		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Structures_F_Mil_BagBunker",
-		"A3_Boat_F_Gamma_Boat_Transport_01"
+		"A3_Boat_F_Gamma_Boat_Transport_01",
+		"A3_Structures_F_Households_Stone_Big",
+		"A3_Structures_F_Research"
 	};
 	addOnsAuto[]=
 	{
@@ -66,7 +68,8 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Boat_F_Gamma_Boat_Transport_01",
 		"A3_Air_F_EPB_Heli_Light_03",
-		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Households_Stone_Big",
+		"A3_Structures_F_Research",
 		"a3_map_altis"
 	};
 	randomSeed=11823142;
@@ -1534,7 +1537,7 @@ class Mission
 				};
 				class Item78
 				{
-					position[]={8297.1426,22.957872,7229.4473};
+					position[]={8301.9307,22.657856,7237.0518};
 					class Effects
 					{
 					};
@@ -1637,7 +1640,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10749.704,40.494045,11917.454};
+					position[]={8300.3818,16.35965,7167.1211};
 					id=51;
 					side="WEST";
 					vehicle="B_G_Soldier_F";
@@ -2317,16 +2320,30 @@ class Mission
 	};
 	class Sensors
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
-			position[]={8292.7734,22.736502,7225.8691};
+			position[]={8297.1396,22.722767,7231.9243};
 			activationBy="GUER";
 			interruptable=1;
 			type="SWITCH";
 			age="UNKNOWN";
 			class Effects
 			{
+			};
+		};
+		class Item1
+		{
+			position[]={9162.4482,17.080227,11965.097};
+			activationBy="LOGIC";
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			expCond="!alive UnitAAF_Fer";
+			class Effects
+			{
+				soundEnv="Earthquake_04";
+				track="EventTrack02_F_Curator";
 			};
 		};
 	};

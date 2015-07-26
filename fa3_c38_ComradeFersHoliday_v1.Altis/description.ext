@@ -293,8 +293,8 @@ class CfgDebriefing
 	class End1
 	{
 		title = "MISSION SUCCESS";
-		subtitle = "";
-		description = "The platoon managed to fulfill all objectives according to plan.";
+		subtitle = "Safe arrival";
+		description = "Comrade Fer has safely arrived at the Dacha and the gentle screams of the education process have begun.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -303,18 +303,18 @@ class CfgDebriefing
 	class End2
 	{
 		title = "MISSION FAILURE";
-		subtitle = "";
-		description = "The platoon failed at fulfilling it's obejctives.";
+		subtitle = "Calamity!";
+		description = "The platoon has failed! Comrade Fer has been lost! The party has provided the CO with the appropriate items.";
 		// pictureBackground = "";
-		// picture = "";
+		picture = "failure.jpg";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End3
 	{
-		title = "MISSION INCONCLUSIVE";
+		title = "MISSION FAILURE";
 		subtitle = "";
-		description = "The platoon either did not fulfill it's objectives to satisfication or had the mission ended in a stalemate.";
+		description = "The platoon was wiped out and Comrade Fer has had to return to his duties prematurely.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

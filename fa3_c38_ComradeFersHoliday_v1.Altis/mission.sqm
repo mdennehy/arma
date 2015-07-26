@@ -157,7 +157,7 @@ class Mission
 					side="GUER";
 					vehicle="I_officer_F";
 					player="PLAY CDG";
-					rank="LIEUTENANT";
+					rank="COLONEL";
 					skill=0.60000002;
 					text="UnitAAF_CO";
 					init="GrpAAF_CO = group this; [""co"",this] call f_fnc_assignGear;";
@@ -173,7 +173,7 @@ class Mission
 					vehicle="I_medic_F";
 					player="PLAY CDG";
 					leader=1;
-					rank="COLONEL";
+					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_CO_M";
 					init="GrpAAF_CO = group this; [""m"",this] call f_fnc_assignGear;";
@@ -2225,7 +2225,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			position[]={9229.0908,15.12569,11983.546};
@@ -2287,7 +2287,7 @@ class Mission
 			position[]={8286.29,23.485462,7211.0757};
 			id=99;
 			side="EMPTY";
-			vehicle="Land_BagBunker_Tower_F";
+			vehicle="Land_i_Stone_HouseBig_V2_F";
 			skill=0.60000002;
 		};
 		class Item6
@@ -2304,6 +2304,14 @@ class Mission
 			id=101;
 			side="EMPTY";
 			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={8286.29,23.485462,7211.0757};
+			id=102;
+			side="EMPTY";
+			vehicle="Land_Dome_Big_F";
 			skill=0.60000002;
 		};
 	};

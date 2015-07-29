@@ -15,7 +15,16 @@ _customText = "";
 _briefing ="
 <br/>
 <font size='18'>ADMIN SECTION</font><br/>
-This briefing section can only be seen by the current admin.
+The convoy faces one of three random major attacks by troops with AT assets and
+two of five random minor attacks by troops without AT assets. The mission is not
+over until the commander hands over to the security detail at Comrade Fer's
+Dacha, who will be found dead on arrival and Command will then have to repel a
+larger naval assault force in RHIBs. The timing of the arrival will depend on
+whether or not Command located and killed a hidden spotter towards the end of 
+the route.
+
+Slotting order is relatively unimportant, so long as we have at least one pilot for
+each fireteam.
 <br/><br/>
 ";
 

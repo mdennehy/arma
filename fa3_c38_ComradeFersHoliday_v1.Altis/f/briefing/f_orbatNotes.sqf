@@ -9,6 +9,9 @@ waitUntil {scriptDone f_script_setGroupIDs};
 private ["_orbatText", "_groups", "_precompileGroups","_maxSlots","_freeSlots"];
 _orbatText = "<br />NOTE: The ORBAT below is only accurate at mission start.<br />
 <br />
+Also, the Party reminds its Comrades that optical assistance is the decadant
+crutch of disloyal degenerate anti-Party rebels and loyal Party soldiers need no
+such crutch.
 <font size='18'>GROUP LEADERS + MEDICS</font><br /><br />";
 _groups = [];
 _hiddenGroups = [];

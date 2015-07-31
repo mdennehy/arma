@@ -818,7 +818,6 @@ class Mission
 		};
 		class Item14
 		{
-			side="GUER";
 			class Vehicles
 			{
 				items=3;
@@ -826,43 +825,33 @@ class Mission
 				{
 					position[]={9172.9541,16.582613,11932.685};
 					azimut=104.043;
-					special="NONE";
 					id=40;
-					side="GUER";
+					side="EMPTY";
 					vehicle="I_MRAP_03_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
 					text="VecAAF_Convoy";
-					init="GrpAAF_Convoy = group this; ";
+					init="";
 					description="Convoy lead";
 				};
 				class Item1
 				{
 					position[]={9155.877,17.308952,11936.951};
 					azimut=105.29;
-					special="NONE";
 					id=41;
-					side="GUER";
+					side="EMPTY";
 					vehicle="I_MRAP_03_F";
-					rank="CORPORAL";
-					skill=0.60000002;
 					text="VecAAF_Convoy_1";
-					init="GrpAAF_Convoy = group this;";
+					init="";
 					description="Convoy 2";
 				};
 				class Item2
 				{
 					position[]={9136.248,18.018337,11941.707};
 					azimut=102.991;
-					special="NONE";
 					id=42;
-					side="GUER";
+					side="EMPTY";
 					vehicle="I_MRAP_03_F";
-					rank="CORPORAL";
-					skill=0.60000002;
 					text="VecAAF_Convoy_2";
-					init="GrpAAF_Convoy = group this;";
+					init="";
 					description="Convoy 3";
 				};
 			};
@@ -924,7 +913,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="UnitAAF_Fer";
-					init="GrpAAF_Convoy = group this; this moveInTurret [VehAAF_Convoy_1,[1]];";
+					init="this moveInTurret [VehAAF_Convoy_1,[1]];";
 					description="Comrade Fer";
 				};
 			};

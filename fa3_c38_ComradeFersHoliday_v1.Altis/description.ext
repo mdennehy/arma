@@ -530,3 +530,10 @@ class CfgUnitInsignia {
 };
 
 // ============================================================================================
+
+class CfgIdentities {
+   class Fer {
+      name="Comrade Fer";
+   };
+};
+

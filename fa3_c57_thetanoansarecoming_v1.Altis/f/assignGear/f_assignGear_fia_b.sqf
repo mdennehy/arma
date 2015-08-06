@@ -275,10 +275,40 @@ case "mmg":
 	};
 };
 
-// LOADOUT: HEAVY MG GUNNER (HMGG)
-case "hmgg":
+// LOADOUT: FORWARD AIR CONTROLLER (FAC)
+case "fac":
 {
-	_unit addBackpack _baghmgg;
+	_unit addBackpack _bagscout;
+};
+
+// LOADOUT: SCOUT MEDIC (SM)
+case "sm":
+{
+	_unit addBackpack _bagscout;
+};
+
+// LOADOUT: SCOUT FTL (SFTL)
+case "sftl":
+{
+	_unit addBackpack _bagscout;
+};
+
+// LOADOUT: SCOUT AUTOMATIC RIFLEMAN
+case "sar":
+{
+	_unit addBackpack _bagscout;
+};
+
+// LOADOUT: SCOUT ASSISTANT AUTOMATIC RIFLEMAN
+case "saar":
+{
+	_unit addBackpack _bagscout;
+};
+
+// LOADOUT: SCOUT RIFLE ANTI-TANK 
+case "srar":
+{
+	_unit addBackpack _bagscout;
 };
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER (HMGAG)

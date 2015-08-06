@@ -66,10 +66,18 @@ if (_typeOfUnit in _ghillie) then {
 
 // Spec Op
 if (_typeOfUnit in _specOp) then {
-	_helmet = _sfHelmet;
-	_uniform = _sfUniform;
+	_helmet = _sfhelmet;
+	_uniform = _sfuniform;
 	_rig = _sfRig;
 	_glasses = _sfGlasses;
+};
+
+// Scout
+if (_typeOfUnit in _scout) then {
+	_helmet = _scoutHelmet;
+	_uniform = _scoutUniform;
+	_rig = _scoutRig;
+	_glasses = _scoutGlasses;
 };
 
 // Add clothing items to unit

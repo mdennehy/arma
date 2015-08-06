@@ -20,7 +20,7 @@ enableSentences false;
 f_var_mapClickTeleport_Uses = 1;					// How often the teleport action can be used. 0 = infinite usage.
 f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
 f_var_mapClickTeleport_GroupTeleport = true; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
-f_var_mapClickTeleport_Units = ["UnitFIA_DC","UnitFIA_DC_M","UnitFIA_BSL_SL","UnitFIA_BSL_M","UnitFIA_B1_FTL","UnitFIA_B1_AR1","UnitFIA_B1_AR2","UnitFIA_B1_AT","UnitFIA_B1_R1","UnitFIA_B1_R2","UnitFIA_B2_FTL","UnitFIA_B2_AR1","UnitFIA_B2_AR2","UnitFIA_B2_AT","UnitFIA_B2_R1","UnitFIA_B2_R2","UnitFIA_CSL_SL","UnitFIA_CSL_M","UnitFIA_C1_FTL","UnitFIA_C1_AR1","UnitFIA_C1_AR2","UnitFIA_C1_AT","UnitFIA_C1_R1","UnitFIA_C1_R2","UnitFIA_C2_FTL","UnitFIA_C2_AR1","UnitFIA_C2_AR2","UnitFIA_C2_AT","UnitFIA_C2_R1","UnitFIA_C2_R2"];				// Restrict map click teleport to these units
+f_var_mapClickTeleport_Units = ["UnitFIA_CO","UnitFIA_DC","UnitFIA_ASL_SL","UnitFIA_A1_FTL","UnitFIA_A2_FTL"];				// Restrict map click teleport to these units
 f_var_mapClickTeleport_Height = 1500;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
 [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 

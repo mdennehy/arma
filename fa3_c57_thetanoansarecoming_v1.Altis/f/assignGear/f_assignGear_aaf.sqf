@@ -237,6 +237,7 @@ _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 _specOp = [];
+_scout = ["fac","sftl","sar","saar","srat","sm"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
@@ -249,6 +250,12 @@ _baseGlasses = [];
 _lightRig = ["V_Chestrig_oli","V_BandollierB_oli"];
 _mediumRig = ["V_PlateCarrierIA2_dgtl","V_PlateCarrierIA1_dgtl"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrierIAGL_dgtl"];
+
+// Scout
+_scoutUniform = ["U_C_Driver_3"];
+_scoutHelmet = ["H_MilCap_gry"];
+_scoutGlasses = ["G_Tactical_Clear"];
+_scoutRig = ["V_PlateCarrierGL_blk"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];

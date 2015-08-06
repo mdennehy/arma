@@ -13,6 +13,11 @@
 //		ar 			- automatic rifleman
 //		aar			- assistant automatic rifleman
 //		rat			- rifleman (AT)
+//		sm 			- medic
+//		sftl		- scout fire team leader
+//		sar 		- scout automatic rifleman
+//		saar		- scout assistant automatic rifleman
+//		srat		- scout rifleman (AT)
 //		dm			- designated marksman
 //		mmgg		- medium mg gunner
 //		mmgag		- medium mg assistant
@@ -25,9 +30,9 @@
 //		mtrg		- mortar gunner (deployable)
 //		mtrag		- mortar assistant (deployable)
 //		msamg		- medium SAM gunner
-//		msamag		- medium SAM assistant gunner
+//		msamag	- medium SAM assistant gunner
 //		hsamg		- heavy SAM gunner (deployable)
-//		hsamag		- heavy SAM assistant gunner (deployable)
+//		hsamag	- heavy SAM assistant gunner (deployable)
 //		sn			- sniper
 //		sp			- spotter (for sniper)
 //		vc			- vehicle commander
@@ -39,7 +44,7 @@
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
-//		div    		- divers
+//		div    	- divers
 //
 //		r 			- rifleman
 //		car			- carabineer
@@ -120,6 +125,10 @@ _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
 
+// Scouts kit
+_scoutRifle = "srifle_DMR_04_F";
+
+
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
 _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
@@ -175,6 +184,7 @@ _bagmtrg = "B_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+_bagscout = "B_Parachute";           // used by scout units
 
 // ====================================================================================
 
@@ -241,18 +251,25 @@ _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 _specOp = [];
+_scout = ["fac","sftl","sar","saar","srat","sm"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["U_C_Driver_3"];
-_baseHelmet = ["H_MilCap_gry"];
-_baseGlasses = ["G_Tactical_Clear"];
+_baseUniform = ["U_BG_leader","U_BG_Guerilla1_1","U_BG_Guerilla2_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_Guerilla3_2","U_BG_Guerrilla_6_1"];
+_baseHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_Bandanna_khk","H_Booniehat_khk","H_Cap_oli","H_Watchcap_blk"];
+_baseGlasses = ["G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli"];
 
 // Vests
 _lightRig = ["V_BandollierB_blk","V_BandollierB_rgr"];
 _mediumRig = ["V_TacVest_blk","V_TacVest_camo","V_TacVest_oli"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrierGL_blk"];
+
+// Scout
+_scoutUniform = ["U_C_Driver_3"];
+_scoutHelmet = ["H_MilCap_gry"];
+_scoutGlasses = ["G_Tactical_Clear"];
+_scoutRig = ["V_PlateCarrierGL_blk"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -399,18 +416,19 @@ switch (_typeofUnit) do
 // LOADOUT: FORWARD AIR CONTROLLER
 	case "fac":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
-    _unit addmagazines ["6Rnd_GreenSignal_F",2];
-    _unit addmagazines ["6Rnd_RedSignal_F",2];
-		_unit addmagazines [_smokegrenade,1];
-		_unit addmagazines [_smokegrenadegreen,1];
-		_unit addweapon ("srifle_DMR_04_F");
-    _unit addWeapon "hgun_Pistol_Signal_F";
-		_unit addWeapon "Laserdesignator";
-		_unit linkItem "ItemGPS";
+      _unit addweapon _scoutRifle;
+      _unit addmagazines [_chemred,3];
+      _unit addmagazines [_chemblue,3];
+      _unit addmagazines [_chemgreen,3];
+      _unit addmagazines [_chemyellow,3];
+      _unit addmagazines ["6Rnd_GreenSignal_F",2];
+      _unit addmagazines ["6Rnd_RedSignal_F",2];
+      _unit addmagazines [_smokegrenade,1];
+      _unit addmagazines [_smokegrenadegreen,1];
+      _unit addWeapon "hgun_Pistol_Signal_F";
+      _unit addWeapon "Laserdesignator";
+      _unit linkItem "ItemGPS";
+      ["fac"] call _backpack;
 	};
 
 // LOADOUT: JTAC
@@ -505,74 +523,82 @@ switch (_typeofUnit) do
 // LOADOUT: SCOUT MEDIC
 	case "sm":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
+    _unit addweapon _scoutRifle;
+    _unit addmagazines [_chemred,3];
+    _unit addmagazines [_chemblue,3];
+    _unit addmagazines [_chemgreen,3];
+    _unit addmagazines [_chemyellow,3];
 		_unit addmagazines ["10Rnd_127x54_Mag",5];
-		_unit addweapon ("srifle_DMR_04_F");
 		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_grenade,1];
 		{_unit addItem _firstaid} forEach [1,2,3,4];
 		_unit linkItem "ItemGPS";
+		["sm"] call _backpack;
 	};
 
 // LOADOUT: SCOUT FIRETEAM LEADER
 	case "sftl":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
-    _unit addmagazines ["6Rnd_GreenSignal_F",2];
-    _unit addmagazines ["6Rnd_RedSignal_F",2];
-		_unit addmagazines [_grenade,1];
-		_unit addweapon ("srifle_DMR_04_F");
-    _unit addWeapon "hgun_Pistol_Signal_F";
-		_unit addWeapon "Laserdesignator";
-		_unit linkItem "ItemGPS";
+      _unit addweapon _scoutRifle;
+      _unit addmagazines [_chemred,3];
+      _unit addmagazines [_chemblue,3];
+      _unit addmagazines [_chemgreen,3];
+      _unit addmagazines [_chemyellow,3];
+      _unit addmagazines ["6Rnd_GreenSignal_F",2];
+      _unit addmagazines ["6Rnd_RedSignal_F",2];
+      _unit addmagazines [_smokegrenade,1];
+	   _unit addmagazines [_grenade,1];
+      _unit addWeapon "hgun_Pistol_Signal_F";
+      _unit addWeapon "Laserdesignator";
+      _unit linkItem "ItemGPS";
+      ["sftl"] call _backpack;
 	};
 
 // LOADOUT: SCOUT AUTOMATIC RIFLEMAN
 	case "sar":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
+    _unit addmagazines [_chemred,3];
+    _unit addmagazines [_chemblue,3];
+    _unit addmagazines [_chemgreen,3];
+    _unit addmagazines [_chemyellow,3];
 		_unit addmagazines [_ARmag,2];
 		_unit addweapon _AR;
 		_attachments pushback (_bipod1);
-    _attachments pushback ("muzzle_snds_H");
+    _attachments pushback ("muzzle_snds_H_MG");
+		["sar"] call _backpack;
 	};
 
 // LOADOUT: SCOUT ASSISTANT AUTOMATIC RIFLEMAN
 	case "saar":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
-		_unit addmagazines [_riflemag,5];
-		_unit addmagazines [_riflemag_tr,4];
-		_unit addweapon (_rifle call BIS_fnc_selectRandom);
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenade,1];
+      _unit addweapon _scoutRifle;
+      _unit addmagazines [_chemred,3];
+      _unit addmagazines [_chemblue,3];
+      _unit addmagazines [_chemgreen,3];
+      _unit addmagazines [_chemyellow,3];
+      _unit addmagazines [_smokegrenade,1];
+	   _unit addmagazines [_grenade,2];
+		["saar"] call _backpack;
 	};
 
 // LOADOUT: SCOUT RIFLEMAN (AT)
 	case "srat":
 	{
-    _unit addmagazines [_chemred,3]
-    _unit addmagazines [_chemblue,3]
-    _unit addmagazines [_chemgreen,3]
-    _unit addmagazines [_chemyellow,3]
-    _unit addmagazines ["5Rnd_127x108_APDS_Mag",3]
-    _unit addmagazines ["11Rnd_45ACP_Mag",3]
-    _unit addWeapon "srifle_GM6_F";
-    _unit addWeapon "hgun_Pistol_heavy_01_F";
-    _unit addHandgunItem "muzzle_snds_acp";
-    _unit addHandgunItem "optic_MRD";
+    _unit addmagazines [_chemred,3];
+    _unit addmagazines [_chemblue,3];
+    _unit addmagazines [_chemgreen,3];
+    _unit addmagazines [_chemyellow,3];
+    _unit addmagazines ["5Rnd_127x108_APDS_Mag",3];
+    _unit addmagazines ["30Rnd_45ACP_Mag_SMG_01_tracer_green",5];
+    _unit addWeapon "SMG_01_Holo_pointer_snds_F";
+    _attachments = [_attach1,"muzzle_snds_acp","optic_Holosight_smg"];
+    //_unit addWeapon "hgun_Pistol_heavy_01_F";
+    //_unit addHandgunItem "muzzle_snds_acp";
+    //_unit addHandgunItem "optic_MRD";
+    _unit setVariable ["gc_sec_pri_wpn_script_active",false];
+	  _unit setVariable ["gc_sec_pri_wpn_stored_weapon","srifle_GM6_F"];
+	  _gc_sec_pri_wpn_act_manager_script = _unit execVM "f\gc_sec_pri_wpn\action_manager.sqf";
+		["srat"] call _backpack;
 	};
 
 // LOADOUT: DESIGNATED MARKSMAN
@@ -1124,3 +1150,5 @@ if !(_isMan) exitWith {};
 // ENSURE UNIT HAS CORRECT WEAPON SELECTED ON SPAWNING
 
 _unit selectweapon primaryweapon _unit;
+
+if (_typeofUnit == "srat") then {_unit selectweapon secondaryweapon _unit;};

@@ -1,5 +1,4 @@
-# ARMA 3 missions written mostly for Folk ARPS #
-# using the F3-Folk ARPS Mission-making Template #
+# ARMA 3 missions written mostly for Folk ARPS using the F3-Folk ARPS Mission-making Template #
 
 ***
 

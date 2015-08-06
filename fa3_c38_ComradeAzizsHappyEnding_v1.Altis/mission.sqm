@@ -85,8 +85,8 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="fa3_c38_ComradeFersHoliday_v1";
-		overviewText="Ensuring Comrade Fer gets to his Dacha unmolested";
+		briefingName="fa3_c38_ComradeAzizsHappyEnding_v1";
+		overviewText="Ensuring Comrade Aziz gets to the Banya and Happy Times Emporium unmolested";
 		resistanceWest=0;
 		startWeather=0.84999996;
 		startWind=0;
@@ -878,9 +878,9 @@ class Mission
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					text="UnitAAF_Fer";
-					init="removeBackpack this; removeAllWeapons this; this setName ""Comrade Fer"";";
-					description="Comrade Fer";
+					text="UnitAAF_Aziz";
+					init="removeBackpack this; removeAllWeapons this; this setName ""Comrade Aziz"";";
+					description="Comrade Aziz";
 				};
 			};
 			class Waypoints
@@ -4382,7 +4382,7 @@ class Mission
 		{
 			position[]={8321.8066,18.511032,7310.8135};
 			name="Dacha";
-			text="Comrade Fer's Dacha";
+			text="Comrade Aziz's Banya and Happy Times Emporium";
 			type="mil_flag";
 			colorName="ColorGUER";
 		};
@@ -4427,9 +4427,9 @@ class Mission
 			activationBy="LOGIC";
 			interruptable=1;
 			age="UNKNOWN";
-			text="Comrade Fer has perished!";
-			name="FerDead";
-			expCond="!alive UnitAAF_Fer";
+			text="Comrade Aziz has perished!";
+			name="AzizDead";
+			expCond="!alive UnitAAF_Aziz";
 			class Effects
 			{
 				sound="Worship";
@@ -4437,7 +4437,7 @@ class Mission
 				soundDet="Fire";
 				track="$STOP$";
 				titleType="TEXT";
-				title="Comrade Fer has died!";
+				title="Comrade Aziz has died!";
 			};
 		};
 		class Item2
@@ -4480,8 +4480,8 @@ class Mission
 			timeoutMax=6;
 			type="END2";
 			age="UNKNOWN";
-			text="Ends game in mission failure when Fer dies";
-			expCond="triggerActivated FerDead;";
+			text="Ends game in mission failure when Aziz dies";
+			expCond="triggerActivated AzizDead;";
 			class Effects
 			{
 			};

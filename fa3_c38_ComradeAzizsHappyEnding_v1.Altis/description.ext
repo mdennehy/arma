@@ -15,7 +15,7 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "Comrade Fer's Holiday";
+onLoadName = "Comrade Aziz's Happy Ending";
 onLoadMission = "Made with the F3 Mission Development Framework";
 author = "Sparks";
 loadScreen = "loadLogo.jpg";
@@ -294,7 +294,7 @@ class CfgDebriefing
 	{
 		title = "MISSION SUCCESS";
 		subtitle = "Safe arrival";
-		description = "Comrade Fer has safely arrived at the Dacha and the gentle screams of the education process have begun.";
+		description = "Comrade Aziz is safely ensconced at the banya and a happy ending is fully anticipated.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -304,7 +304,7 @@ class CfgDebriefing
 	{
 		title = "MISSION FAILURE";
 		subtitle = "Calamity!";
-		description = "The platoon has failed! Comrade Fer has been lost! The party has provided the CO with the appropriate items.";
+		description = "The platoon has failed! Comrade Aziz (and the party funds) have been lost! The party has provided the CO with the appropriate items.";
 		// pictureBackground = "";
 		picture = "failure.jpg";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -314,7 +314,7 @@ class CfgDebriefing
 	{
 		title = "MISSION FAILURE";
 		subtitle = "";
-		description = "The platoon was wiped out and Comrade Fer has had to return to his duties prematurely.";
+		description = "The platoon was wiped out and Comrade Aziz has had to return to his duties prematurely.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -532,8 +532,8 @@ class CfgUnitInsignia {
 // ============================================================================================
 
 class CfgIdentities {
-   class Fer {
-      name="Comrade Fer";
+   class Aziz {
+      name="Comrade Aziz";
    };
 };
 

@@ -1,10 +1,10 @@
 MISSION README
 ==============
 
-Mission: Comrade Fer's Holiday
+Mission: Comrade Aziz's Holiday
 Version: 0-0-1
 Developer(s): Sparks
-Description: Providing security for Comrade Fer's Dacha Holiday Trip
+Description: Providing security for Comrade Aziz's trip to the Banya
 
 
 

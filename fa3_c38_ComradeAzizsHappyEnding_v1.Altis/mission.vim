@@ -2,10 +2,6 @@ let SessionLoad = 1
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
-inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
-inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
-inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
-inoremap <C-Space> 
 map! <S-Insert> <MiddleMouse>
 inoremap <D-BS> 
 inoremap <M-BS> 
@@ -17,9 +13,8 @@ noremap! <M-Right> <C-Right>
 noremap! <D-Right> <End>
 noremap! <M-Left> <C-Left>
 noremap! <D-Left> <Home>
-imap <Nul> <C-Space>
+inoremap <Nul> 
 map T :TaskList
-nnoremap \d :YcmShowDetailedDiagnostic
 nmap <silent> \ig <Plug>IndentGuidesToggle
 nmap <silent> \w\t <Plug>VimwikiTabMakeDiaryNote
 nmap <silent> \w\w <Plug>VimwikiMakeDiaryNote
@@ -72,7 +67,6 @@ map <F3> !/usr/local/bin/boxes -r 
 map <F2> !par 80 
 map <F1> :ls:b 
 vmap <BS> "-d
-inoremap <expr> 	 pumvisible() ? "\" : "\	"
 imap  <Plug>DiscretionaryEnd
 inoremap # X#
 let &cpo=s:cpo_save
@@ -87,9 +81,6 @@ set cindent
 set cinoptions=l1,c4,(s,U1,w1,m1,j1
 set cinwords=if,elif,else,for,while,try,except,finally,def,class
 set cmdheight=2
-set completefunc=youcompleteme#Complete
-set completeopt=preview,menuone
-set cpoptions=aAceFsB
 set cscopetag
 set cscopeverbose
 set directory=~/.vim.tmp
@@ -110,10 +101,9 @@ set laststatus=2
 set mouse=a
 set printexpr=system('open\ -a\ Preview\ '.v:fname_in)\ +\ v:shell_error
 set ruler
-set runtimepath=~/.vim,~/.vim/bundle/Vundle.vim,~/.vim/bundle/YouCompleteMe,~/.vim/bundle/vim-fugitive,~/.vim/bundle/vimwiki,~/.vim/bundle/vitality.vim,~/.vim/bundle/powerline,~/.vim/bundle/taglist.vim,~/.vim/bundle/vim-plugin-minibufexpl,~/.vim/bundle/vim-endwise,~/.vim/bundle/vim-indent-guides,~/.vim/bundle/syntastic,~/.vim/bundle/vim-ruby,~/.vim/bundle/python-mode,~/.vim/bundle/vim-cucumber,~/.vim/bundle/tabular,~/.vim/bundle/vim-markdown,~/.vim/bundle/vim-better-whitespace,~/.vim/bundle/ColorSchemeMenuMaker,~/.vim/bundle/vim-colorschemes,~/.vim/bundle/vim-colors-solarized,~/.vim/bundle/vim-json,~/.vim/bundle/todolist.vim,~/.vim/bundle/unite.vim,~/.vim/bundle/vim-sqf-syntax,~/.vim/bundle/vimerl,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/Vundle.vim,~/.vim/bundle/Vundle.vim/after,~/.vim/bundle/YouCompleteMe/after
+set runtimepath=~/.vim,~/.vim/bundle/Vundle.vim,~/.vim/bundle/vim-fugitive,~/.vim/bundle/vimwiki,~/.vim/bundle/vitality.vim,~/.vim/bundle/powerline,~/.vim/bundle/taglist.vim,~/.vim/bundle/vim-plugin-minibufexpl,~/.vim/bundle/vim-endwise,~/.vim/bundle/vim-indent-guides,~/.vim/bundle/syntastic,~/.vim/bundle/vim-ruby,~/.vim/bundle/python-mode,~/.vim/bundle/vim-cucumber,~/.vim/bundle/tabular,~/.vim/bundle/vim-markdown,~/.vim/bundle/vim-better-whitespace,~/.vim/bundle/ColorSchemeMenuMaker,~/.vim/bundle/vim-colorschemes,~/.vim/bundle/vim-colors-solarized,~/.vim/bundle/vim-json,~/.vim/bundle/todolist.vim,~/.vim/bundle/unite.vim,~/.vim/bundle/vim-sqf-syntax,~/.vim/bundle/vimerl,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/Vundle.vim,~/.vim/bundle/Vundle.vim/after,~/.vim/bundle/vim-fugitive/after,~/.vim/bundle/vimwiki/after,
 set shiftround
 set shiftwidth=2
-set shortmess=filnxtToOc
 set showcmd
 set showmatch
 set smartindent
@@ -128,48 +118,31 @@ set textwidth=80
 set title
 set updatecount=20
 set updatetime=1000
-set window=52
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis
+cd ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/README.md
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/readme.txt
-badd +307 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/description.ext
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/briefing.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/init.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/mission.sqm
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/assignGear/f_assignGear_aaf.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/assignGear/f_assignGear_clothes.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/briefing/f_briefing_aaf.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/briefing/f_briefing_admin.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/briefing/f_orbatNotes.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/briefing/f_loadoutNotes.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/briefing/f_briefing_civ.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/f/casualtiesCap/f_CasualtiesCapCheck.sqf
-badd +1 ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/ws_fnc/README.md
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/README.md
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/briefing.sqf
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/description.ext
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/init.sqf
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/mission.sqm
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/readme.txt
+badd +0 ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/salute.sqf
 argglobal
 silent! argdel *
 argadd README.md
-argadd readme.txt
-argadd description.ext
 argadd briefing.sqf
+argadd description.ext
 argadd init.sqf
 argadd mission.sqm
-argadd f/assignGear/f_assignGear_aaf.sqf
-argadd f/assignGear/f_assignGear_clothes.sqf
-argadd f/briefing/f_briefing_aaf.sqf
-argadd f/briefing/f_briefing_admin.sqf
-argadd f/briefing/f_orbatNotes.sqf
-argadd f/briefing/f_loadoutNotes.sqf
-argadd f/briefing/f_briefing_civ.sqf
-argadd f/casualtiesCap/f_CasualtiesCapCheck.sqf
-argadd ws_fnc/README.md
-edit ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/mission.sqm
+argadd readme.txt
+argadd salute.sqf
+edit ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/README.md
 set splitbelow splitright
 wincmd _ | wincmd |
 split
@@ -178,21 +151,21 @@ wincmd w
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe '1resize ' . ((&lines * 3 + 26) / 53)
-exe '2resize ' . ((&lines * 46 + 26) / 53)
+exe '1resize ' . ((&lines * 1 + 25) / 50)
+exe '2resize ' . ((&lines * 45 + 25) / 50)
 argglobal
 enew
-file ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/-MiniBufExplorer-
+file ~/Arma/mdennehy/fa3_c38_ComradeAzizsHappyEnding_v1.Altis/-MiniBufExplorer-
 let s:cpo_save=&cpo
 set cpo&vim
 nnoremap <buffer> h :call search('\[[0-9]*:[^\]]*\]','b'):<BS>
 nnoremap <buffer> j gj
 nnoremap <buffer> k gk
 nnoremap <buffer> l :call search('\[[0-9]*:[^\]]*\]'):<BS>
-nnoremap <buffer> <Up> gk
-nnoremap <buffer> <Down> gj
-nnoremap <buffer> <Right> :call search('\[[0-9]*:[^\]]*\]'):<BS>
 nnoremap <buffer> <Left> :call search('\[[0-9]*:[^\]]*\]','b'):<BS>
+nnoremap <buffer> <Right> :call search('\[[0-9]*:[^\]]*\]'):<BS>
+nnoremap <buffer> <Down> gj
+nnoremap <buffer> <Up> gk
 let &cpo=s:cpo_save
 unlet s:cpo_save
 setlocal keymap=
@@ -216,7 +189,7 @@ setlocal commentstring=/*%s*/
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=
 setlocal conceallevel=0
-setlocal completefunc=youcompleteme#Complete
+setlocal completefunc=
 setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
@@ -306,7 +279,23 @@ setlocal wrap
 setlocal wrapmargin=0
 wincmd w
 argglobal
-edit ~/Arma/mdennehy/fa3_c38_ComradeFersHoliday_v1.Altis/mission.sqm
+let s:cpo_save=&cpo
+set cpo&vim
+vmap <buffer> [] <Plug>Markdown_MoveToPreviousSiblingHeader
+vmap <buffer> [[ <Plug>Markdown_MoveToPreviousHeader
+nmap <buffer> [] <Plug>Markdown_MoveToPreviousSiblingHeader
+nmap <buffer> [[ <Plug>Markdown_MoveToPreviousHeader
+vmap <buffer> ]c <Plug>Markdown_MoveToCurHeader
+vmap <buffer> ]u <Plug>Markdown_MoveToParentHeader
+vmap <buffer> ][ <Plug>Markdown_MoveToNextSiblingHeader
+vmap <buffer> ]] <Plug>Markdown_MoveToNextHeader
+nmap <buffer> ]c <Plug>Markdown_MoveToCurHeader
+nmap <buffer> ]u <Plug>Markdown_MoveToParentHeader
+nmap <buffer> ][ <Plug>Markdown_MoveToNextSiblingHeader
+nmap <buffer> ]] <Plug>Markdown_MoveToNextHeader
+nmap <buffer> gx <Plug>Markdown_OpenUrlUnderCursor
+let &cpo=s:cpo_save
+unlet s:cpo_save
 setlocal keymap=
 setlocal noarabic
 setlocal autoindent
@@ -323,12 +312,12 @@ setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
 setlocal cinoptions=l1,c4,(s,U1,w1,m1,j1
 setlocal cinwords=if,elif,else,for,while,try,except,finally,def,class
 setlocal colorcolumn=
-setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+setlocal comments=b:*,b:+,b:-,b:>
 setlocal commentstring=/*%s*/
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=
 setlocal conceallevel=0
-setlocal completefunc=youcompleteme#Complete
+setlocal completefunc=
 setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
@@ -340,30 +329,30 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'sqf'
-setlocal filetype=sqf
+if &filetype != 'mkd'
+setlocal filetype=mkd
 endif
 setlocal foldcolumn=0
 set nofoldenable
 setlocal nofoldenable
-setlocal foldexpr=0
+setlocal foldexpr=Foldexpr_markdown(v:lnum)
 setlocal foldignore=#
 setlocal foldlevel=0
 setlocal foldmarker={{{,}}}
 set foldmethod=syntax
-setlocal foldmethod=syntax
+setlocal foldmethod=expr
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldtext=foldtext()
 setlocal formatexpr=
-setlocal formatoptions=tcq
+setlocal formatoptions=tqr
 setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
 setlocal grepprg=
 setlocal iminsert=2
 setlocal imsearch=2
 setlocal include=
 setlocal includeexpr=
-setlocal indentexpr=
+setlocal indentexpr=GetMkdIndent()
 setlocal indentkeys=0{,0},:,0#,!^F,o,O,e
 setlocal noinfercase
 setlocal iskeyword=@,48-57,_,192-255
@@ -403,12 +392,12 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'sqf'
-setlocal syntax=sqf
+if &syntax != 'mkd'
+setlocal syntax=mkd
 endif
 setlocal tabstop=2
 setlocal tags=
-setlocal textwidth=80
+setlocal textwidth=78
 setlocal thesaurus=
 setlocal noundofile
 setlocal undolevels=-123456
@@ -416,7 +405,7 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 1 - ((0 * winheight(0) + 22) / 45)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -424,14 +413,14 @@ normal! zt
 normal! 0
 wincmd w
 2wincmd w
-exe '1resize ' . ((&lines * 3 + 26) / 53)
-exe '2resize ' . ((&lines * 46 + 26) / 53)
+exe '1resize ' . ((&lines * 1 + 25) / 50)
+exe '2resize ' . ((&lines * 45 + 25) / 50)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToOc
+set winheight=1 winwidth=20 shortmess=filnxtToO
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)

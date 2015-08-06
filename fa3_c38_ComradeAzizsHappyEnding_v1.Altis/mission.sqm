@@ -4492,14 +4492,14 @@ class Mission
 			a=0;
 			b=0;
 			activationBy="BRAVO";
-			timeoutMin=10;
-			timeoutMid=15;
-			timeoutMax=20;
+			timeoutMin=2;
+			timeoutMid=4;
+			timeoutMax=6;
 			interruptable=1;
 			age="UNKNOWN";
 			text="Execute the prisoners";
 			name="ExecutePrisoners_1";
-			expActiv="prisoner_1 addRating -100000; prisoner_2 addRating -100000; prisoner_3 addRating -100000; prisoner_4 addRating -100000; prisoner_1 setCaptive false; prisoner_2 setCaptive false; prisoner_3 setCaptive false; prisoner_4 setCaptive false;";
+			expActiv="shooter dotarget prisoner_1; prisoner_1 addRating -100000; prisoner_1 setCaptive false; shooter dofire prisoner_1; shooter dotarget prisoner_2; prisoner_2 addRating -100000; prisoner_2 setCaptive false; shooter dofire prisoner_2; shooter dotarget prisoner_3; prisoner_3 addRating -100000; prisoner_3 setCaptive false; shooter dofire prisoner_3; shooter dotarget prisoner_4; prisoner_4 addRating -100000; prisoner_4 setCaptive false; shooter dofire prisoner_4; "
 			class Effects
 			{
 			};

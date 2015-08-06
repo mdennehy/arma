@@ -1,4 +1,4 @@
-# ARMA 3 missions written mostly for Folk ARPS using the F3-Folk ARPS Mission-making Template #
+# ARMA 3 missions written mostly for [Folk ARPS](http://www.folkarps.com/forum/index.php) using the [F3-Folk ARPS Mission-making Template](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) #
 
 ***
 

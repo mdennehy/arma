@@ -879,7 +879,7 @@ class Mission
 					rank="COLONEL";
 					skill=0.60000002;
 					text="UnitAAF_Aziz";
-					init="removeBackpack this; removeAllWeapons this; this setName ""Comrade Aziz"";";
+					init="removeBackpack this; removeAllWeapons this; this setIdentity ""Aziz"";";
 					description="Comrade Aziz";
 				};
 			};
@@ -902,7 +902,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={9134.7529,18.215084,11945.454};
+					position[]={9133.8604,18.108242,11942.158};
 					type="GETIN";
 					class Effects
 					{
@@ -2370,7 +2370,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9133.9658,18.244638,11945.642};
+					position[]={9133.5391,18.124674,11942.344};
 					type="GETIN";
 					combatMode="BLUE";
 					speed="FULL";
@@ -4463,7 +4463,7 @@ class Mission
 			age="UNKNOWN";
 			text="Convoy, roll out!";
 			name="ConvoyStart";
-			expActiv="nul = [VehAAF_Convoy, ""Convoy"", 25] spawn ws_fnc_taskConvoy";
+			expActiv="nul = [VehAAF_Convoy, ""Convoy"", 15] spawn ws_fnc_taskConvoy";
 			class Effects
 			{
 				titleType="TEXT";
@@ -4499,7 +4499,7 @@ class Mission
 			age="UNKNOWN";
 			text="Execute the prisoners";
 			name="ExecutePrisoners_1";
-			expActiv="prisoner_1 addRating -100000; prisoner_2 addRating -100000; prisoner_3 addRating -100000; prisoner_4 addRating -100000; prisoner_1 setCaptive false; ";
+			expActiv="prisoner_1 addRating -100000; prisoner_2 addRating -100000; prisoner_3 addRating -100000; prisoner_4 addRating -100000; prisoner_1 setCaptive false; prisoner_2 setCaptive false; prisoner_3 setCaptive false; prisoner_4 setCaptive false;";
 			class Effects
 			{
 			};

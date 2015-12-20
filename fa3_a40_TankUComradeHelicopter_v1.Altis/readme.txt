@@ -1,10 +1,10 @@
 MISSION README
 ==============
 
-Mission: [ Insert name of mission ]
-Version: [ Insert version here, format: N-N-N ]
-Developer(s): [ Insert your name(s) here. ]
-Description: [ Insert short mission description here ]
+Mission: Tank U Comrade Helicopter
+Version: 0-0-1
+Developer(s): Sparks
+Description: Helicopters play Conkers using vehicles
 
 
 

@@ -9,3 +9,5 @@ VIP escort mission.
 Written with Eagle_eye.
 HALO scouts and heliborne troops strike radar sites in advance of an invasion.
 
+## fa3_a40_TankUComradeHelicopter_v1.Altis
+Afterparty silliness

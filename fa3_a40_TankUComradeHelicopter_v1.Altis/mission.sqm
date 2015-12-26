@@ -251,7 +251,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="orca1";
+					text="B_Orca_Pilot";
 				};
 				class Item1
 				{
@@ -262,7 +262,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="hellcat1";
+					text="B_Hellcat_Pilot";
 				};
 				class Item2
 				{
@@ -273,7 +273,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="mohawk1";
+					text="B_Mohawk_Pilot";
 				};
 				class Item3
 				{
@@ -284,7 +284,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="taru1";
+					text="B_Taru_Pilot";
 				};
 				class Item4
 				{
@@ -295,7 +295,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="Huron1";
+					text="B_Huron_Pilot";
 				};
 				class Item5
 				{
@@ -306,7 +306,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="orca2";
+					text="B_Orca_Copilot";
 				};
 				class Item6
 				{
@@ -317,7 +317,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="hellcat2";
+					text="B_Hellcat_Copilot";
 				};
 				class Item7
 				{
@@ -328,7 +328,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="mohawk2";
+					text="B_Mohawk_Copilot";
 				};
 				class Item8
 				{
@@ -339,7 +339,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="taru2";
+					text="B_Taru_Copilot";
 				};
 				class Item9
 				{
@@ -350,7 +350,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="huron2";
+					text="B_Huron_Copilot";
 				};
 			};
 		};
@@ -370,7 +370,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="ophellcat1";
+					text="O_Hellcat_Pilot";
 				};
 				class Item1
 				{
@@ -381,7 +381,7 @@ class Mission
 					vehicle="O_helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="oporca1";
+					text="O_Orca_Pilot";
 				};
 				class Item2
 				{
@@ -392,7 +392,7 @@ class Mission
 					vehicle="O_helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opmohawk1";
+					text="O_Mohawk_Pilot";
 				};
 				class Item3
 				{
@@ -403,7 +403,7 @@ class Mission
 					vehicle="O_helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optaru1";
+					text="O_Taru_Pilot";
 				};
 				class Item4
 				{
@@ -414,7 +414,7 @@ class Mission
 					vehicle="O_helipilot_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="ophuron1";
+					text="O_Huron_Pilot";
 				};
 				class Item5
 				{
@@ -425,7 +425,7 @@ class Mission
 					vehicle="O_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="ophuron2";
+					text="O_Huron_Copilot";
 				};
 				class Item6
 				{
@@ -436,7 +436,7 @@ class Mission
 					vehicle="O_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optaru2";
+					text="O_Taru_Copilot";
 				};
 				class Item7
 				{
@@ -447,7 +447,7 @@ class Mission
 					vehicle="O_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opmohawk2";
+					text="O_Mohawk_Pilot";
 				};
 				class Item8
 				{
@@ -458,6 +458,7 @@ class Mission
 					vehicle="O_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
+          text="O_Orca_Copilot"
 				};
 				class Item9
 				{
@@ -468,7 +469,7 @@ class Mission
 					vehicle="O_helicrew_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="ophellcat2";
+					text="O_Hellcat_Copilot";
 				};
 			};
 		};
@@ -488,7 +489,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opdiver1";
+					text="O_Diver_1";
 				};
 				class Item1
 				{
@@ -499,7 +500,7 @@ class Mission
 					vehicle="O_diver_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opdiver2";
+					text="O_Diver_2";
 				};
 				class Item2
 				{
@@ -510,7 +511,7 @@ class Mission
 					vehicle="O_diver_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opdiver3";
+					text="O_Diver_3";
 				};
 				class Item3
 				{
@@ -521,7 +522,7 @@ class Mission
 					vehicle="O_diver_exp_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opdiver4";
+					text="O_Diver_4";
 				};
 				class Item4
 				{
@@ -532,7 +533,7 @@ class Mission
 					vehicle="O_Soldier_TL_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optruck1";
+					text="O_Truck_1";
 				};
 				class Item5
 				{
@@ -543,7 +544,7 @@ class Mission
 					vehicle="O_Soldier_LAT_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optruck2";
+					text="O_Truck_2";
 				};
 				class Item6
 				{
@@ -554,7 +555,7 @@ class Mission
 					vehicle="O_Soldier_LAT_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optruck3";
+					text="O_Truck_3";
 				};
 				class Item7
 				{
@@ -565,7 +566,7 @@ class Mission
 					vehicle="O_Soldier_LAT_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="optruck4";
+					text="O_Truck_4";
 				};
 				class Item8
 				{
@@ -576,7 +577,7 @@ class Mission
 					vehicle="O_Soldier_LAT_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opoffroad1";
+					text="O_Offroad_1";
 				};
 				class Item9
 				{
@@ -587,7 +588,7 @@ class Mission
 					vehicle="O_Soldier_LAT_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opoffroad2";
+					text="O_Offroad_2";
 				};
 				class Item10
 				{
@@ -598,7 +599,7 @@ class Mission
 					vehicle="O_officer_F";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="opfiftycal1";
+					text="O_Fiftycal";
 				};
 			};
 		};

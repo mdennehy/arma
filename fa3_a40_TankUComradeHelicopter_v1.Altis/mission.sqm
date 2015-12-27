@@ -248,9 +248,9 @@ class Mission
 					id=8;
 					side="WEST";
 					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
-					player="PLAY CDG";
 					skill=0.60000002;
 					text="B_Orca_Pilot";
 				};
@@ -261,8 +261,8 @@ class Mission
 					id=9;
 					side="WEST";
 					vehicle="B_Helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Hellcat_Pilot";
 				};
@@ -273,8 +273,8 @@ class Mission
 					id=10;
 					side="WEST";
 					vehicle="B_Helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Mohawk_Pilot";
 				};
@@ -285,8 +285,8 @@ class Mission
 					id=11;
 					side="WEST";
 					vehicle="B_Helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Taru_Pilot";
 				};
@@ -297,8 +297,8 @@ class Mission
 					id=12;
 					side="WEST";
 					vehicle="B_Helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Huron_Pilot";
 				};
@@ -309,8 +309,8 @@ class Mission
 					id=13;
 					side="WEST";
 					vehicle="B_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Orca_Copilot";
 				};
@@ -321,8 +321,8 @@ class Mission
 					id=14;
 					side="WEST";
 					vehicle="B_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Hellcat_Copilot";
 				};
@@ -333,8 +333,8 @@ class Mission
 					id=15;
 					side="WEST";
 					vehicle="B_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Mohawk_Copilot";
 				};
@@ -345,8 +345,8 @@ class Mission
 					id=16;
 					side="WEST";
 					vehicle="B_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Taru_Copilot";
 				};
@@ -357,8 +357,8 @@ class Mission
 					id=17;
 					side="WEST";
 					vehicle="B_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Huron_Copilot";
 				};
@@ -377,9 +377,9 @@ class Mission
 					id=18;
 					side="EAST";
 					vehicle="O_helipilot_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
-					player="PLAY CDG";
 					skill=0.60000002;
 					text="O_Hellcat_Pilot";
 				};
@@ -390,8 +390,8 @@ class Mission
 					id=19;
 					side="EAST";
 					vehicle="O_helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Orca_Pilot";
 				};
@@ -402,8 +402,8 @@ class Mission
 					id=20;
 					side="EAST";
 					vehicle="O_helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Mohawk_Pilot";
 				};
@@ -414,8 +414,8 @@ class Mission
 					id=21;
 					side="EAST";
 					vehicle="O_helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Taru_Pilot";
 				};
@@ -426,8 +426,8 @@ class Mission
 					id=22;
 					side="EAST";
 					vehicle="O_helipilot_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Huron_Pilot";
 				};
@@ -438,8 +438,8 @@ class Mission
 					id=23;
 					side="EAST";
 					vehicle="O_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Huron_Copilot";
 				};
@@ -450,8 +450,8 @@ class Mission
 					id=24;
 					side="EAST";
 					vehicle="O_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Taru_Copilot";
 				};
@@ -462,8 +462,8 @@ class Mission
 					id=25;
 					side="EAST";
 					vehicle="O_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Mohawk_Pilot";
 				};
@@ -474,8 +474,8 @@ class Mission
 					id=26;
 					side="EAST";
 					vehicle="O_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Orca_Copilot";
 				};
@@ -486,8 +486,8 @@ class Mission
 					id=27;
 					side="EAST";
 					vehicle="O_helicrew_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Hellcat_Copilot";
 				};
@@ -506,9 +506,9 @@ class Mission
 					id=28;
 					side="EAST";
 					vehicle="O_diver_TL_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
-					player="PLAY CDG";
 					skill=0.60000002;
 					text="O_Diver_1";
 				};
@@ -519,8 +519,8 @@ class Mission
 					id=29;
 					side="EAST";
 					vehicle="O_diver_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Diver_2";
 				};
@@ -531,8 +531,8 @@ class Mission
 					id=30;
 					side="EAST";
 					vehicle="O_diver_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Diver_3";
 				};
@@ -543,8 +543,8 @@ class Mission
 					id=31;
 					side="EAST";
 					vehicle="O_diver_exp_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Diver_4";
 				};
@@ -555,8 +555,8 @@ class Mission
 					id=32;
 					side="EAST";
 					vehicle="O_Soldier_TL_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Truck_1";
 				};
@@ -567,8 +567,8 @@ class Mission
 					id=33;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Truck_2";
 				};
@@ -590,8 +590,8 @@ class Mission
 					id=35;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Truck_4";
 				};
@@ -602,8 +602,8 @@ class Mission
 					id=36;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Offroad_1";
 				};
@@ -614,8 +614,8 @@ class Mission
 					id=37;
 					side="EAST";
 					vehicle="O_Soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Offroad_2";
 				};
@@ -626,8 +626,8 @@ class Mission
 					id=38;
 					side="EAST";
 					vehicle="O_officer_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Fiftycal";
 				};
@@ -645,9 +645,9 @@ class Mission
 					id=39;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
-					player="PLAY CDG";
 					skill=0.60000002;
 					text="B_Fiftycal";
 				};
@@ -657,8 +657,8 @@ class Mission
 					id=40;
 					side="WEST";
 					vehicle="B_diver_TL_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Diver_1";
 				};
@@ -668,8 +668,8 @@ class Mission
 					id=41;
 					side="WEST";
 					vehicle="B_diver_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Diver_2";
 				};
@@ -679,8 +679,8 @@ class Mission
 					id=42;
 					side="WEST";
 					vehicle="B_diver_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Diver_3";
 				};
@@ -690,8 +690,8 @@ class Mission
 					id=43;
 					side="WEST";
 					vehicle="B_diver_exp_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Diver_4";
 				};
@@ -701,8 +701,8 @@ class Mission
 					id=44;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Offroad_1";
 				};
@@ -712,8 +712,8 @@ class Mission
 					id=45;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Offroad_2";
 				};
@@ -723,8 +723,8 @@ class Mission
 					id=46;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Truck_1";
 				};
@@ -734,8 +734,8 @@ class Mission
 					id=47;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Truck_2";
 				};
@@ -745,8 +745,8 @@ class Mission
 					id=48;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Truck_3";
 				};
@@ -756,8 +756,8 @@ class Mission
 					id=49;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
-					rank="SERGEANT";
 					player="PLAY CDG";
+					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Truck_4";
 				};
@@ -770,121 +770,133 @@ class Mission
 		class Item0
 		{
 			position[]={15227.106,17.91,16796.699};
-			azimut=-134.08211;
+			azimut=-134.082;
 			id=50;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_03_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehNATO_TH1";
+			text="O_Huron";
 		};
 		class Item1
 		{
 			position[]={15202.077,17.91,16790.906};
-			azimut=-132.4189;
+			azimut=-132.41901;
 			id=51;
 			side="EMPTY";
 			vehicle="I_Heli_Transport_02_F";
 			skill=0.60000002;
+			text="O_Mohawk";
 		};
 		class Item2
 		{
 			position[]={15216.9,17.91,16770.775};
-			azimut=-128.26378;
+			azimut=-128.26401;
 			id=52;
 			side="EMPTY";
 			vehicle="O_Heli_Transport_04_F";
 			skill=0.60000002;
+			text="O_Taru";
 		};
 		class Item3
 		{
 			position[]={15185.632,17.91,16774.344};
-			azimut=-490.15784;
+			azimut=-490.15799;
 			id=53;
 			side="EMPTY";
 			vehicle="I_Heli_light_03_unarmed_F";
 			skill=0.60000002;
+			text="O_Hellcat";
 		};
 		class Item4
 		{
 			position[]={15578.957,18.497765,17217.867};
-			azimut=-127.59416;
+			azimut=-127.594;
 			id=54;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.60000002;
+			text="B_OffroadArmed";
 		};
 		class Item5
 		{
 			position[]={15588.098,18.442247,17206.738};
-			azimut=-127.59416;
+			azimut=-127.594;
 			id=55;
 			side="EMPTY";
 			vehicle="C_Offroad_01_F";
 			skill=0.60000002;
+			text="B_Offroad";
 		};
 		class Item6
 		{
 			position[]={15598.401,18.501913,17194.467};
-			azimut=-127.59416;
+			azimut=-127.594;
 			id=56;
 			side="EMPTY";
 			vehicle="C_Van_01_transport_F";
 			skill=0.60000002;
+			text="B_Truck";
 		};
 		class Item7
 		{
 			position[]={15608.978,18.581987,17183.213};
-			azimut=-127.59416;
+			azimut=-127.594;
 			id=57;
 			side="EMPTY";
 			vehicle="C_Rubberboat";
 			skill=0.60000002;
+			text="B_Boat";
 		};
 		class Item8
 		{
 			position[]={14157.174,18.091789,15712.067};
-			azimut=49.793068;
+			azimut=49.793098;
 			id=58;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			skill=0.60000002;
+			text="O_OffroadArmed";
 		};
 		class Item9
 		{
 			position[]={14149.01,18.186346,15720.396};
-			azimut=49.793068;
+			azimut=49.793098;
 			id=59;
 			side="EMPTY";
 			vehicle="C_Offroad_01_F";
 			skill=0.60000002;
+			text="O_Offroad";
 		};
 		class Item10
 		{
 			position[]={14141,18.04899,15729.085};
-			azimut=49.793068;
+			azimut=49.793098;
 			id=60;
 			side="EMPTY";
 			vehicle="C_Van_01_transport_F";
 			skill=0.60000002;
+			text="O_Truck";
 		};
 		class Item11
 		{
 			position[]={14132.063,17.958006,15738.331};
-			azimut=49.793068;
+			azimut=49.793098;
 			id=61;
 			side="EMPTY";
 			vehicle="C_Rubberboat";
 			skill=0.60000002;
+			text="O_Boat";
 		};
 		class Item12
 		{
 			position[]={15201.281,17.91,16753.32};
-			azimut=-136.5479;
+			azimut=-136.548;
 			id=62;
 			side="EMPTY";
 			vehicle="O_Heli_Light_02_unarmed_F";
 			skill=0.60000002;
+			text="O_Orca";
 		};
 		class Item13
 		{
@@ -895,43 +907,47 @@ class Mission
 			vehicle="B_Heli_Transport_03_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehNATO_TH1_1";
+			text="B_Huron";
 		};
 		class Item14
 		{
 			position[]={14404.314,17.844835,15929.654};
-			azimut=46.777206;
+			azimut=46.777199;
 			id=64;
 			side="EMPTY";
 			vehicle="I_Heli_Transport_02_F";
 			skill=0.60000002;
+			text="B_Mohawk";
 		};
 		class Item15
 		{
 			position[]={14389.209,17.85,15949.579};
-			azimut=50.932331;
+			azimut=50.932301;
 			id=65;
 			side="EMPTY";
 			vehicle="O_Heli_Transport_04_F";
 			skill=0.60000002;
+			text="B_Taru";
 		};
 		class Item16
 		{
 			position[]={14420.523,17.85,15946.448};
-			azimut=-310.96167;
+			azimut=-310.96201;
 			id=66;
 			side="EMPTY";
 			vehicle="I_Heli_light_03_unarmed_F";
 			skill=0.60000002;
+			text="B_Hellcat";
 		};
 		class Item17
 		{
 			position[]={14404.582,17.85578,15967.251};
-			azimut=42.648216;
+			azimut=42.648201;
 			id=67;
 			side="EMPTY";
 			vehicle="O_Heli_Light_02_unarmed_F";
 			skill=0.60000002;
+			text="B_Orca";
 		};
 	};
 	class Markers

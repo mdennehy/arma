@@ -253,6 +253,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Orca_Pilot";
+					init="Grp_B_Orca = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver B_Orca;";
 				};
 				class Item1
 				{
@@ -265,6 +266,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Hellcat_Pilot";
+					init="Grp_B_Hellcat = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver B_Hellcat;";
 				};
 				class Item2
 				{
@@ -277,6 +279,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Mohawk_Pilot";
+					init="Grp_B_Mohawk = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver B_Mohawk;";
 				};
 				class Item3
 				{
@@ -289,6 +292,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Taru_Pilot";
+					init="Grp_B_Taru = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver B_Taru;";
 				};
 				class Item4
 				{
@@ -301,6 +305,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Huron_Pilot";
+					init="Grp_B_Huron = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver B_Huron;";
 				};
 				class Item5
 				{
@@ -313,6 +318,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Orca_Copilot";
+					init="Grp_B_Orca = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [B_Orca,[1]];";
 				};
 				class Item6
 				{
@@ -325,6 +331,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Hellcat_Copilot";
+					init="Grp_B_Hellcat= group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [B_Hellcat,[1]];";
 				};
 				class Item7
 				{
@@ -337,6 +344,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Mohawk_Copilot";
+					init="Grp_B_Mohawk = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [B_Mohawk,[1]];";
 				};
 				class Item8
 				{
@@ -349,6 +357,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Taru_Copilot";
+					init="Grp_B_Taru = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [B_Taru,[1]];";
 				};
 				class Item9
 				{
@@ -361,6 +370,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="B_Huron_Copilot";
+					init="Grp_B_Huron = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [B_Huron,[1]];";
 				};
 			};
 		};
@@ -382,6 +392,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Hellcat_Pilot";
+					init="Grp_O_Hellcat = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver O_Hellcat;";
 				};
 				class Item1
 				{
@@ -394,6 +405,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Orca_Pilot";
+					init="Grp_O_Orca = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver O_Orca;";
 				};
 				class Item2
 				{
@@ -406,6 +418,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Mohawk_Pilot";
+					init="Grp_O_Mohawk = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver O_Mohawk;";
 				};
 				class Item3
 				{
@@ -418,6 +431,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Taru_Pilot";
+					init="Grp_O_Taru = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver O_Taru;";
 				};
 				class Item4
 				{
@@ -430,6 +444,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Huron_Pilot";
+					init="Grp_O_Huron = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver O_Huron;";
 				};
 				class Item5
 				{
@@ -442,6 +457,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Huron_Copilot";
+					init="Grp_O_Huron = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [O_Huron,[1]];";
 				};
 				class Item6
 				{
@@ -454,6 +470,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Taru_Copilot";
+					init="Grp_O_Taru = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [O_Taru,[1]];";
 				};
 				class Item7
 				{
@@ -465,7 +482,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="O_Mohawk_Pilot";
+					text="O_Mohawk_Copilot";
+					init="Grp_O_Mohawk = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [O_Mohawk,[1]];";
 				};
 				class Item8
 				{
@@ -478,6 +496,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Orca_Copilot";
+					init="Grp_O_Orca = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [O_Orca,[1]];";
 				};
 				class Item9
 				{
@@ -490,6 +509,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="O_Hellcat_Copilot";
+					init="Grp_O_Hellcat = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [O_Hellcat,[1]];";
 				};
 			};
 		};
